@@ -28,9 +28,9 @@ body {
   width: 320px;
   height: 80px;
   --radius: 40px;
-  /* --expand: 6px;
-  --strength: 80px;
-  --blur: 0px; */
+  --expand: 8px;
+  --strength: 30px;
+  --blur: 0px;
   background-color: rgb(80 80 80 / 0.1);
 }
 

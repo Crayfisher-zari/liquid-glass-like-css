@@ -31,7 +31,7 @@ const docBuildSettings = {
   },
   target: "esnext",
   assetsInlineLimit: 0,
-}
+};
 
 export default defineConfig(({ mode }) => ({
   base: process.env?.BASE_PATH ?? "/",

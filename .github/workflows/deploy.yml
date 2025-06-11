@@ -24,7 +24,6 @@ env:
   # Setting an environment variable with the value of a configuration variable
   BASE_PATH: ${{ vars.BASE_PATH }}
 
-
 jobs:
   # Single deploy job since we're just deploying
   deploy:
@@ -36,13 +35,13 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       - uses: pnpm/action-setup@v4
-        with: 
+        with:
           version: 10
       - name: Use Node.js v22
         uses: actions/setup-node@v4
         with:
           node-version: 22
-          cache: 'pnpm'
+          cache: "pnpm"
           cache-dependency-path: pnpm-lock.yaml
       - run: pnpm install --frozen-lockfile
       - run: pnpm run build:doc
@@ -51,7 +50,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'docs/'
+          path: "docs/"
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

@@ -1,6 +1,6 @@
 {
   "name": "liquid-glass-like-css",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "author": "Nishihara Tsubasa",
   "license": "MIT",
@@ -39,5 +39,11 @@
     "prettier": "3.5.3",
     "typescript": "5.8.3",
     "vite": "6.3.5"
-  }
+  },
+  "keywords": [
+    "liquid-glass",
+    "CSS",
+    "iOS",
+    "UI"
+  ]
 }
