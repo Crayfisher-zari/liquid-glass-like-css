@@ -1,17 +1,41 @@
 {
-  "name": "p",
-  "private": true,
+  "name": "liquid-glass-like-css",
   "version": "0.0.0",
   "type": "module",
+  "author": "Nishihara Tsubasa",
+  "license": "MIT",
   "scripts": {
     "dev": "vite --host",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
+    "build": "vite build",
+    "build:doc": "vite build --mode doc",
+    "preview": "vite preview --mode doc",
     "format": "prettier --write ."
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Crayfisher-zari/liquid-glass-like-css.git"
+  },
+  "exports": {
+    ".": {
+      "import": {
+        "default": "./dist/main.css"
+      },
+      "require": {
+        "default": "./dist/main.css"
+      }
+    },
+    "./main.css": {
+      "import": "./dist/main.css",
+      "require": "./dist/main.css"
+    }
   },
   "devDependencies": {
     "@types/node": "24.0.0",
     "dotenv": "16.5.0",
+    "glob": "11.0.2",
     "prettier": "3.5.3",
     "typescript": "5.8.3",
     "vite": "6.3.5"
