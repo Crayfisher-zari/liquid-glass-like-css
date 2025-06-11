@@ -5,7 +5,7 @@ export default defineConfig({
   base: process.env?.BASE_PATH ?? "/",
   build: {
     lib: {
-      entry: ["src/style.css"],
+      entry: ["src/main.css"],
       name: "style",
     },
     cssCodeSplit: true,

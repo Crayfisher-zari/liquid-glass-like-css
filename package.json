@@ -6,11 +6,13 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "format": "prettier --write ."
   },
   "devDependencies": {
     "@types/node": "24.0.0",
     "dotenv": "16.5.0",
+    "prettier": "3.5.3",
     "typescript": "5.8.3",
     "vite": "6.3.5"
   }
