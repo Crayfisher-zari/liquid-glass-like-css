@@ -9,6 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   min-height: 300vh;
+  font-family: "Roboto", sans-serif;
 }
 
 .fixBox {
@@ -24,17 +25,58 @@ body {
   gap: 48px;
 }
 
+button {
+  appearance: none;
+  background: none;
+  border: none;
+}
+
+.material-symbols-rounded {
+  font-variation-settings:
+    "FILL" 1,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 48;
+}
+
 .rect {
   width: 320px;
   height: 80px;
+  padding: 0 36px;
   --radius: 40px;
-  --expand: 8px;
+  /* --expand: 10px; */
   --strength: 30px;
   --blur: 0px;
   background-color: rgb(80 80 80 / 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  button {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-size: 14px;
+    &.current {
+      color: #fe365f;
+    }
+    .icon {
+      font-size: 36px;
+    }
+  }
 }
 
 .circle {
+  --blur: 10px;
+
   width: 80px;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  color: #333;
+  background-color: rgb(255 255 255 / 0.4);
+  .icon {
+    font-size: 48px;
+  }
 }

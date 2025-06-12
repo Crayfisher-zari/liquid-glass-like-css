@@ -5,8 +5,9 @@ import { fileURLToPath } from "node:url";
 import "dotenv/config";
 
 const libBuidSettings = {
+  outDir: "../dist",
   lib: {
-    entry: ["src/main.css"],
+    entry: ["/main.css"],
     name: "style",
   },
   cssCodeSplit: true,

@@ -1,16 +1,45 @@
 <!doctype html>
-<html lang="en">
+<html lang="ja">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=apps,home,music_note,play_arrow,settings"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Liquid Glass風CSS</title>
   </head>
   <body>
     <div class="fixBox">
-      <div class="cfz-liquid-glass-rect rect"></div>
-      <div class="cfz-liquid-glass-circle circle"></div>
+      <div class="cfz-liquid-glass-rect rect">
+        <button class="current">
+          <span class="icon material-symbols-rounded"> home </span>
+          Home
+        </button>
+        <button>
+          <span class="icon material-symbols-rounded"> apps </span>
+          Apps
+        </button>
+        <button>
+          <span class="icon material-symbols-rounded"> music_note </span>
+          Music
+        </button>
+        <button>
+          <span class="icon material-symbols-rounded"> settings </span>
+          Settings
+        </button>
+      </div>
+      <div class="cfz-liquid-glass-circle circle">
+        <span class="icon material-symbols-rounded"> play_arrow </span>
+      </div>
     </div>
   </body>
 </html>

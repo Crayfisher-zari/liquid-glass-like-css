@@ -105,9 +105,9 @@
     mask-composite:
       exclude, exclude, exclude, exclude, add, add, add, add, add, add, add;
     box-shadow:
-      inset 2px 2px 2px 0 rgb(255 255 255 /0.2),
-      inset -2px -2px 2px 0 rgb(0 0 0 /0.05);
-    filter: contrast(1.08) brightness(0.95);
+      inset 2px 2px var(--expand) 0 rgb(255 255 255 /0.3),
+      inset -2px -2px var(--expand) 0 rgb(0 0 0 /0.1);
+    filter: contrast(1.2) brightness(0.95);
   }
   &:after {
     content: "";
@@ -148,9 +148,9 @@
     mask-repeat: no-repeat;
     mask-composite: subtract;
     box-shadow:
-      inset 2px 2px 2px 0 rgb(255 255 255 /0.2),
-      inset -2px -2px 2px 0 rgb(0 0 0 /0.05);
-    filter: contrast(1.08) brightness(0.95);
+      inset 2px 2px var(--expand) 0 rgb(255 255 255 /0.3),
+      inset -2px -2px var(--expand) 0 rgb(0 0 0 /0.1);
+    filter: contrast(1.2) brightness(0.95);
   }
   &:after {
     content: "";
